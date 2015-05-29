@@ -1,0 +1,28 @@
+.zotero p.journalArticle, .zotero p.book, .zotero p.bookSection {clear:both;}
+.zotero p:last-child {margin-bottom:1em !important;}
+
+.zotero .journalArticle a[href$='.pdf'], .zotero a.journalArticle {
+	display:inline-block;
+	padding-left:20px;
+	line-height:18px;
+	background:transparent url(images/acrobat.png) center left no-repeat;
+}
+
+.zotero .journalArticle a[href$='.doc'], .zotero .journalArticle a[href$='.docx'] {
+	display:inline-block;
+	padding-left:20px;
+	line-height:18px;
+	background:transparent url(images/word.png) center left no-repeat;
+}
+
+.zotero .book a[href$='.pdf'], .zotero a.book {
+	display:inline-block;
+	padding-left:20px;
+	line-height:18px;
+	background:transparent url(images/book_blank.png) center left no-repeat;
+}
+
+.zotero .thumbnail {
+	float:left;	
+	padding:2px 10px 5px 0;
+}
