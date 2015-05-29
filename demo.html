@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jZot demo</title>
+
+<link rel="stylesheet" type="text/css" href="jzot.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="jzot.js"></script>
+
+</head>
+
+<body>
+	<h1>jZot</h1>
+	<h3>Items with attached files</h3>
+	<span id="demo1"></span>
+	<h3>Items without attachments</h3>
+	<span id="demo2"></span>
+	<h3>Items with an alternative reference style</h3>
+	<span id="demo3"></span>
+	<h3>Items from a specific collection</h3>
+	<span id="demo4"></span>
+	<h3>Item ordering</h3>
+	<span id="demo5"></span>
+	<h3>Items from a group</h3>
+	<span id="demo6"></span>
+	<script>
+	    /** Dykes Research and Learning account **/
+		$(document).ready(function () {
+			$("#demo1").jzot({userID:"2472501", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC"});
+			$("#demo2").jzot({userID:"2472501", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC", attachments:false});
+			$("#demo3").jzot({userID:"2472501", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC", style:"co-author"});
+			$("#demo4").jzot({userID:"2472501", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC", collectionKey:"B96Z2ZFC"}); // Collection: Funded IPE...
+			$("#demo5").jzot({userID:"2472501", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC", order:"title"});
+			$("#demo6").jzot({groupID:"350967", apiReadOnlyKey:"3cTO7W0wTzIGU3JUgbIFTwIC"});
+		});
+	</script>
+</body>
+</html>
