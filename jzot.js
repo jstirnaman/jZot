@@ -68,7 +68,8 @@
 				$.ajax({
 					url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&output=xml&num=-1&callback=?&q=' + encodeURIComponent(url),
 					dataType: 'json',
-					//headers: {'Zotero-API-Version': 3, 'Authorization' : 'Bearer 3cTO7W0wTzIGU3JUgbIFTwIC'},
+					//@TODO Set version in headers instead of query string
+         //headers: {'Zotero-API-Version': 3, 'Authorization' : 'Bearer 3cTO7W0wTzIGU3JUgbIFTwIC'},
 					success: function(data) {
 						if(!data.responseData) {
 							if(window.console) window.console.log('Failed to retrieve feed ' + url);
